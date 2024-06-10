@@ -1,0 +1,7 @@
+# database:
+  dialect: "postgres"
+  username: "postgres"
+  password: "root123"
+  host: "localhost"
+  port: 5432  
+  dbname: "postgres"
