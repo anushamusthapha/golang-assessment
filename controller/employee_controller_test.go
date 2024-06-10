@@ -242,8 +242,7 @@ func TestListEmployees(t *testing.T) {
 	service := services.NewEmployeeService(repo)
 	controller := NewEmployeeController(service)
 
-	// Test case: Valid list of employees
-	t.Run("TestListEmployees_ValidData", func(t *testing.T) {
+	t.Run("TestListEmployees", func(t *testing.T) {
 		// Prepare request
 		req, _ := http.NewRequest("GET", "/employees", nil)
 		req.URL.RawQuery = "page=1&limit=10" // Simulate query parameters
